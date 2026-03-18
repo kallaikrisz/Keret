@@ -8,7 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="..\kr1.txt" Link="kr1.txt" />
+    <Content Include="..\kr1.txt" Link="kr1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kozos\Kozos.csproj" />
   </ItemGroup>
 
 </Project>
